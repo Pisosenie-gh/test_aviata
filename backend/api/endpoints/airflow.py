@@ -41,6 +41,8 @@ async def read_replacement(
     """
     try: 
         search_get = search.get_search(db, search_id=search_id)
+        if not search_get:
+            raise HTTPException(status_code=404, detail=f"{search_id} not found ")
     except Exception:      
         raise HTTPException(status_code=404, detail=f"{search_id} not found ")
 
@@ -53,6 +55,9 @@ async def read_replacement(
             search_id=search_get[0].search_id,
             status=search_get[0].status, items=data
             )
+    except IndexError:
+        return "Invalid data"
+        
     except:
         data_json = SearchSchema(
             search_id=search_get[0].search_id,

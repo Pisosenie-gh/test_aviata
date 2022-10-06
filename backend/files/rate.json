@@ -1,0 +1,324 @@
+{
+    "rates": {
+        "generator": "Alternate RSS Builder",
+        "title": "Official exchange rates of National Bank of Republic Kazakhstan",
+        "link": "www.nationalbank.kz",
+        "description": "Official exchange rates of National Bank of Republic Kazakhstan",
+        "copyright": "www.nationalbank.kz",
+        "date": "06.10.2022",
+        "item": [
+            {
+                "fullname": "\u0410\u0412\u0421\u0422\u0420\u0410\u041b\u0418\u0419\u0421\u041a\u0418\u0419 \u0414\u041e\u041b\u041b\u0410\u0420",
+                "title": "AUD",
+                "description": "303.94",
+                "quant": "1",
+                "index": "DOWN",
+                "change": "-2.55"
+            },
+            {
+                "fullname": "\u0410\u0417\u0415\u0420\u0411\u0410\u0419\u0414\u0416\u0410\u041d\u0421\u041a\u0418\u0419 \u041c\u0410\u041d\u0410\u0422",
+                "title": "AZN",
+                "description": "277.65",
+                "quant": "1",
+                "index": "DOWN",
+                "change": "-1.55"
+            },
+            {
+                "fullname": "\u0410\u0420\u041c\u042f\u041d\u0421\u041a\u0418\u0419 \u0414\u0420\u0410\u041c",
+                "title": "AMD",
+                "description": "11.68",
+                "quant": "10",
+                "index": "DOWN",
+                "change": "-0.08"
+            },
+            {
+                "fullname": "\u0411\u0415\u041b\u041e\u0420\u0423\u0421\u0421\u041a\u0418\u0419 \u0420\u0423\u0411\u041b\u042c",
+                "title": "BYN",
+                "description": "185.79",
+                "quant": "1",
+                "index": "DOWN",
+                "change": "-1.03"
+            },
+            {
+                "fullname": "\u0411\u0420\u0410\u0417\u0418\u041b\u042c\u0421\u041a\u0418\u0419 \u0420\u0415\u0410\u041b",
+                "title": "BRL",
+                "description": "90.8",
+                "quant": "1",
+                "index": "DOWN",
+                "change": "-0.72"
+            },
+            {
+                "fullname": "\u0412\u0415\u041d\u0413\u0415\u0420\u0421\u041a\u0418\u0425 \u0424\u041e\u0420\u0418\u041d\u0422\u041e\u0412",
+                "title": "HUF",
+                "description": "11.05",
+                "quant": "10",
+                "index": "DOWN",
+                "change": "-0.16"
+            },
+            {
+                "fullname": "\u0413\u041e\u041d\u041a\u041e\u041d\u0413\u0421\u041a\u0418\u0419 \u0414\u041e\u041b\u041b\u0410\u0420",
+                "title": "HKD",
+                "description": "59.88",
+                "quant": "1",
+                "index": "DOWN",
+                "change": "-0.33"
+            },
+            {
+                "fullname": "\u0413\u0420\u0423\u0417\u0418\u041d\u0421\u041a\u0418\u0419 \u041b\u0410\u0420\u0418",
+                "title": "GEL",
+                "description": "169.7",
+                "quant": "1",
+                "index": "DOWN",
+                "change": "-0.33"
+            },
+            {
+                "fullname": "\u0414\u0410\u0422\u0421\u041a\u0410\u042f \u041a\u0420\u041e\u041d\u0410",
+                "title": "DKK",
+                "description": "62.76",
+                "quant": "1",
+                "index": "DOWN",
+                "change": "-0.04"
+            },
+            {
+                "fullname": "\u0414\u0418\u0420\u0425\u0410\u041c \u041e\u0410\u042d",
+                "title": "AED",
+                "description": "127.98",
+                "quant": "1",
+                "index": "DOWN",
+                "change": "-0.71"
+            },
+            {
+                "fullname": "\u0414\u041e\u041b\u041b\u0410\u0420 \u0421\u0428\u0410",
+                "title": "USD",
+                "description": "470.06",
+                "quant": "1",
+                "index": "DOWN",
+                "change": "-2.62"
+            },
+            {
+                "fullname": "\u0415\u0412\u0420\u041e",
+                "title": "EUR",
+                "description": "466.68",
+                "quant": "1",
+                "index": "DOWN",
+                "change": "-0.23"
+            },
+            {
+                "fullname": "\u0418\u041d\u0414\u0418\u0419\u0421\u041a\u0410\u042f \u0420\u0423\u041f\u0418\u042f",
+                "title": "INR",
+                "description": "5.77",
+                "quant": "1",
+                "index": "DOWN",
+                "change": "-0.03"
+            },
+            {
+                "fullname": "\u0418\u0420\u0410\u041d\u0421\u041a\u0418\u0419 \u0420\u0418\u0410\u041b",
+                "title": "IRR",
+                "description": "11.2",
+                "quant": "1000",
+                "index": "DOWN",
+                "change": "-0.10"
+            },
+            {
+                "fullname": "\u041a\u0410\u041d\u0410\u0414\u0421\u041a\u0418\u0419 \u0414\u041e\u041b\u041b\u0410\u0420",
+                "title": "CAD",
+                "description": "345.91",
+                "quant": "1",
+                "index": "DOWN",
+                "change": "-0.99"
+            },
+            {
+                "fullname": "\u041a\u0418\u0422\u0410\u0419\u0421\u041a\u0418\u0419 \u042e\u0410\u041d\u042c",
+                "title": "CNY",
+                "description": "66.08",
+                "quant": "1",
+                "index": "DOWN",
+                "change": "-0.37"
+            },
+            {
+                "fullname": "\u041a\u0423\u0412\u0415\u0419\u0422\u0421\u041a\u0418\u0419 \u0414\u0418\u041d\u0410\u0420",
+                "title": "KWD",
+                "description": "1519.16",
+                "quant": "1",
+                "index": "DOWN",
+                "change": "-6.99"
+            },
+            {
+                "fullname": "\u041a\u042b\u0420\u0413\u042b\u0417\u0421\u041a\u0418\u0419 \u0421\u041e\u041c",
+                "title": "KGS",
+                "description": "5.86",
+                "quant": "1",
+                "index": "DOWN",
+                "change": "-0.04"
+            },
+            {
+                "fullname": "\u041c\u0410\u041b\u0410\u0417\u0418\u0419\u0421\u041a\u0418\u0419 \u0420\u0418\u041d\u0413\u0413\u0418\u0422",
+                "title": "MYR",
+                "description": "101.55",
+                "quant": "1",
+                "index": "DOWN",
+                "change": "-0.28"
+            },
+            {
+                "fullname": "\u041c\u0415\u041a\u0421\u0418\u041a\u0410\u041d\u0421\u041a\u0418\u0419 \u041f\u0415\u0421\u041e",
+                "title": "MXN",
+                "description": "23.43",
+                "quant": "1",
+                "index": "DOWN",
+                "change": "-0.23"
+            },
+            {
+                "fullname": "\u041c\u041e\u041b\u0414\u0410\u0412\u0421\u041a\u0418\u0419 \u041b\u0415\u0419",
+                "title": "MDL",
+                "description": "24.29",
+                "quant": "1",
+                "index": "DOWN",
+                "change": "-0.07"
+            },
+            {
+                "fullname": "\u041d\u041e\u0420\u0412\u0415\u0416\u0421\u041a\u0410\u042f \u041a\u0420\u041e\u041d\u0410",
+                "title": "NOK",
+                "description": "44.52",
+                "quant": "1",
+                "index": "DOWN",
+                "change": "-0.13"
+            },
+            {
+                "fullname": "\u041f\u041e\u041b\u042c\u0421\u041a\u0418\u0419 \u0417\u041b\u041e\u0422\u042b\u0419",
+                "title": "PLN",
+                "description": "96.88",
+                "quant": "1",
+                "index": "DOWN",
+                "change": "-0.48"
+            },
+            {
+                "fullname": "\u0420\u0418\u042f\u041b \u0421\u0410\u0423\u0414\u041e\u0412\u0421\u041a\u041e\u0419 \u0410\u0420\u0410\u0412\u0418\u0418",
+                "title": "SAR",
+                "description": "125.08",
+                "quant": "1",
+                "index": "DOWN",
+                "change": "-0.68"
+            },
+            {
+                "fullname": "\u0420\u041e\u0421\u0421\u0418\u0419\u0421\u041a\u0418\u0419 \u0420\u0423\u0411\u041b\u042c",
+                "title": "RUB",
+                "description": "7.91",
+                "quant": "1",
+                "index": "DOWN",
+                "change": "-0.10"
+            },
+            {
+                "fullname": "\u0421\u0414\u0420",
+                "title": "XDR",
+                "description": "605.48",
+                "quant": "1",
+                "index": "UP",
+                "change": "+0.13"
+            },
+            {
+                "fullname": "\u0421\u0418\u041d\u0413\u0410\u041f\u0423\u0420\u0421\u041a\u0418\u0419 \u0414\u041e\u041b\u041b\u0410\u0420",
+                "title": "SGD",
+                "description": "330.14",
+                "quant": "1",
+                "index": "DOWN",
+                "change": "-0.50"
+            },
+            {
+                "fullname": "\u0422\u0410\u0414\u0416\u0418\u041a\u0421\u041a\u0418\u0419 \u0421\u041e\u041c\u041e\u041d\u0418",
+                "title": "TJS",
+                "description": "47.67",
+                "quant": "1",
+                "index": "DOWN",
+                "change": "-0.81"
+            },
+            {
+                "fullname": "\u0422\u0410\u0419\u0421\u041a\u0418\u0419 \u0411\u0410\u0422",
+                "title": "THB",
+                "description": "12.57",
+                "quant": "1",
+                "index": "DOWN",
+                "change": "-0.02"
+            },
+            {
+                "fullname": "\u0422\u0423\u0420\u0415\u0426\u041a\u0410\u042f \u041b\u0418\u0420\u0410",
+                "title": "TRY",
+                "description": "25.31",
+                "quant": "1",
+                "index": "DOWN",
+                "change": "-0.13"
+            },
+            {
+                "fullname": "\u0423\u0417\u0411\u0415\u041a\u0421\u041a\u0418\u0425 \u0421\u0423\u041c\u041e\u0412",
+                "title": "UZS",
+                "description": "4.28",
+                "quant": "100",
+                "index": "DOWN",
+                "change": "-0.03"
+            },
+            {
+                "fullname": "\u0423\u041a\u0420\u0410\u0418\u041d\u0421\u041a\u0410\u042f \u0413\u0420\u0418\u0412\u041d\u0410",
+                "title": "UAH",
+                "description": "12.73",
+                "quant": "1",
+                "index": "DOWN",
+                "change": "-0.20"
+            },
+            {
+                "fullname": "\u0424\u0423\u041d\u0422 \u0421\u0422\u0415\u0420\u041b\u0418\u041d\u0413\u041e\u0412 \u0421\u041e\u0415\u0414\u0418\u041d\u0415\u041d\u041d\u041e\u0413\u041e \u041a\u041e\u0420\u041e\u041b\u0415\u0412\u0421\u0422\u0412\u0410",
+                "title": "GBP",
+                "description": "535.21",
+                "quant": "1",
+                "index": "DOWN",
+                "change": "-1.85"
+            },
+            {
+                "fullname": "\u0427\u0415\u0428\u0421\u041a\u0410\u042f \u041a\u0420\u041e\u041d\u0410",
+                "title": "CZK",
+                "description": "19.02",
+                "quant": "1",
+                "index": "DOWN",
+                "change": "-0.01"
+            },
+            {
+                "fullname": "\u0428\u0412\u0415\u0414\u0421\u041a\u0410\u042f \u041a\u0420\u041e\u041d\u0410",
+                "title": "SEK",
+                "description": "43.05",
+                "quant": "1",
+                "index": "DOWN",
+                "change": "-0.26"
+            },
+            {
+                "fullname": "\u0428\u0412\u0415\u0419\u0426\u0410\u0420\u0421\u041a\u0418\u0419 \u0424\u0420\u0410\u041d\u041a",
+                "title": "CHF",
+                "description": "477.61",
+                "quant": "1",
+                "index": "DOWN",
+                "change": "-0.62"
+            },
+            {
+                "fullname": "\u042e\u0416\u041d\u041e-\u0410\u0424\u0420\u0418\u041a\u0410\u041d\u0421\u041a\u0418\u0419 \u0420\u0410\u041d\u0414",
+                "title": "ZAR",
+                "description": "26.43",
+                "quant": "1",
+                "index": "DOWN",
+                "change": "-0.18"
+            },
+            {
+                "fullname": "\u042e\u0416\u041d\u041e-\u041a\u041e\u0420\u0415\u0419\u0421\u041a\u0418\u0425 \u0412\u041e\u041d",
+                "title": "KRW",
+                "description": "33.17",
+                "quant": "100",
+                "index": "UP",
+                "change": "+0.03"
+            },
+            {
+                "fullname": "\u042f\u041f\u041e\u041d\u0421\u041a\u0410\u042f \u0419\u0415\u041d\u0410",
+                "title": "JPY",
+                "description": "3.25",
+                "quant": "1",
+                "index": "DOWN",
+                "change": "-0.02"
+            }
+        ]
+    }
+}

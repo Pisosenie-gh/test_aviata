@@ -13,14 +13,14 @@ class TestServiceResponses(unittest.TestCase):
 
     def test_response_provider_a(self):
         response = r.post("http://localhost:8000/search")
-        with open('files/response_a.json') as f:
+        with open('../files/response_a.json') as f:
             templates = json.load(f)
         self.assertEqual(response.status_code, 200)
         self.assertEqual(response.json(), templates)
 
     def test_response_provider_b(self):
         response = r.post("http://localhost:8001/search")
-        with open('files/response_b.json') as f:
+        with open('../files/response_b.json') as f:
             templates = json.load(f)
         self.assertEqual(response.status_code, 200)
         self.assertEqual(response.json(), templates)
@@ -46,7 +46,7 @@ class TestServiceResponses(unittest.TestCase):
         self.assertEqual(response.status_code, 404)
 
     def test_rate(self):
-        with open('files/rate.json') as f:
+        with open('../files/rate.json') as f:
             templates = json.load(f)
         expected_rate = float(templates['rates']['item'][10]['description'])
         self.assertEqual(get_rate("USD"), expected_rate)

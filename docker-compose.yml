@@ -12,7 +12,7 @@ services:
       POSTGRES_HOST: db
       POSTGRES_HOST_AUTH_METHOD: trust
     ports:
-      - 5432:5432
+      - '5432:5432'
     volumes:
       - /var/lib/postgresql:/var/lib/postgresql  
 
@@ -27,7 +27,7 @@ services:
     image: redis:latest
     container_name: redis_db
     ports:
-      - 6379:6379
+      - '6379:6379'
     command: ["redis-server", "--appendonly", "yes"]
     volumes:
       - redis-data:/data
@@ -54,7 +54,7 @@ services:
     volumes:
       - './backend:/backend'
     ports:
-      - 9000:9000
+      - '9000:9000'
     depends_on:
       - redis
       - db
@@ -67,7 +67,7 @@ services:
     volumes:
       - './backend:/backend'
     ports:
-      - 8000:8000
+      - '8000:8000'
 
 
 
@@ -79,7 +79,7 @@ services:
     volumes:
       - './backend:/backend'
     ports:
-      - 8001:8001
+      - '8001:8001'
 
 
 volumes:

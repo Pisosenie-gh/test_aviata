@@ -1,67 +1,59 @@
 import asyncio
 from typing import Any
-from fastapi import APIRouter, Depends, HTTPException
+from fastapi import APIRouter, Depends, HTTPException, BackgroundTasks
 from sqlalchemy.orm import Session
-from fastapi import BackgroundTasks
 from views.views import search
-from .deps import get_db
+from config.deps import get_db
 from schemas.search import SearchSchema, CreateSearchSchema
-from views.services import get_response, sort_and_edit_json
-
+from views.services import ProviderAService, ProviderBService
+from utils.rate import sort_and_edit_json
 
 router = APIRouter()
 
 
 @router.post("/search/", response_model=CreateSearchSchema)
 async def create_position(
-    *,
-    db: Session = Depends(get_db),
-    background_tasks: BackgroundTasks
-
+        db: Session = Depends(get_db),
+        background_tasks: BackgroundTasks = None
 ) -> Any:
     """
-    отправляет запросы на поиск в сервисы  provider-a и provider-b
+    Отправляет запросы на поиск в сервисы provider-a и provider-b
     и в ответе возвращает уникальный search_id поиска
     """
     search_create = search.create_search(db=db)
-    id = str(search_create.search_id)
-    background_tasks.add_task(get_response, id)
+    search_id = str(search_create.search_id)
+    provider_a_service = ProviderAService(search_id)
+    provider_b_service = ProviderBService(search_id)
+    background_tasks.add_task(provider_a_service)
+    background_tasks.add_task(provider_b_service)
     return search_create
 
 
-@router.get("/results/{search_id}/{currency}")
+@router.get("/results/{search_id}/")
 async def read_replacement(
-    db: Session = Depends(get_db),
-    search_id: str = None,
-    currency: str = None
+        db: Session = Depends(get_db),
+        search_id: str = None,
 ) -> Any:
     """
-    возвращает результаты поиска в провайдерах provider-a и provider-b
-    по уникальному search_id  поиска с указанием валюты currency
+    Возвращает результаты поиска в провайдерах provider-a и provider-b
+    по уникальному search_id поиска с указанием валюты currency
     """
-    try: 
-        search_get = search.get_search(db, search_id=search_id)
-        if not search_get:
-            raise HTTPException(status_code=404, detail=f"{search_id} not found ")
-    except Exception:      
-        raise HTTPException(status_code=404, detail=f"{search_id} not found ")
+    search_get = search.get_search(db, search_id=search_id)
+    if not search_get:
+        raise HTTPException(status_code=404, detail=f"{search_id} не найден")
 
-    task1 = asyncio.create_task(sort_and_edit_json(search_id))
+    task = asyncio.create_task(sort_and_edit_json(search_id))
+
     try:
-        data = await task1
-        if search_get[0].status != "COMPLITED":
-            search.update_status(db, search_get[0].search_id)
+        data = await task
+        if search_get[0].status != "COMPLETED":
+            search.update_status(db, search_get[0].search_id, search_get[0].status)
         data_json = SearchSchema(
             search_id=search_get[0].search_id,
-            status=search_get[0].status, items=data
-            )
+            status=search_get[0].status,
+            items=data
+        )
     except IndexError:
-        return "Invalid data"
-        
-    except:
-        data_json = SearchSchema(
-            search_id=search_get[0].search_id,
-            status=search_get[0].status, items=[]
-            )
+        raise HTTPException(status_code=400, detail="Некорректные данные")
 
     return data_json

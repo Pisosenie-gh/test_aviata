@@ -17,7 +17,6 @@ class SearchPath(BaseModel):
         orm_mode = True
 
 
-# Properties to return to client
 class CreateSearchSchema(SearchInDBBase):
     search_id: Optional[UUID]
 
@@ -32,8 +31,3 @@ class SearchSchema(SearchInDBBase):
 
     class Config:
         orm_mode = True
-
-
-# Properties properties stored in DB
-class SearchInDB(SearchInDBBase):
-    pass

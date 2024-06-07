@@ -6,11 +6,11 @@ import json
 app = FastAPI()
 
 
-@app.post("/search")
+@app.get("/search")
 def read_item():
     with open('files/response_a.json') as f:
         templates = json.load(f)
-        time.sleep(30)
+        time.sleep(5)
     return templates
 
 
